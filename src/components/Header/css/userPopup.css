@@ -1,0 +1,108 @@
+.avatar {
+    height: 50px;
+    width: 50px;
+    margin-right: 40px;
+    background-image: url('../img/profile.png');
+    background-position: 50% 50%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    border: 2px solid var(--light-grey-color);
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.popup {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    top: 100%;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border: 1px solid var(--light-grey-color);
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: var(--text-color);
+    z-index: 5;
+}
+
+header:hover .popup {
+    display: flex;
+}
+
+.popup__department {
+    margin-bottom: 10px;
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+.user-info__title {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.user-info__title,
+.popup p {
+    font-size: 16px;
+}
+
+.brn-logout {
+    display: inline-block;
+    width: 30%;
+    padding: 5px 10px;
+    border: 1px solid var(--orange-color);
+    background: var(--orange-color);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.brn-logout:hover {
+    /* background: var(--light-grey-color); */
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); */
+    background: var(--light-orange-color);
+    border: 1px solid var(--light-orange-color);
+}
+
+.user-info {
+    list-style: none;
+}
+
+.user-info__item {
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px) {
+    .popup {
+        width: calc(100% - 40px);
+        height: 250px;
+        border-radius: none;
+        text-align: center;
+    }
+
+    .popup__department {
+        font-size: 16px;
+    }
+
+    .popup p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 480px) {
+    .avatar {
+        height: 30px;
+        width: 30px;
+    }
+
+    .popup p {
+        font-size: 14px;
+    }
+}

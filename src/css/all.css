@@ -1,0 +1,129 @@
+:root {
+    --main-color: #0070ba;
+    --main-color-hover: #1993e4;
+    --light-blue: #ddf2ff;
+    --orange-color: #ff9900;
+    --light-orange-color: #ffb443;
+    --main-bg-color: rgb(185, 239, 255);
+    --text-color: #444;
+    --light-text-color: #666;
+    --hover-text-color: #bbb;
+    --hover-bg-grey-color: #eee;
+    --light-grey-color: #ddd;
+    --light-grey-color-2: rgb(248, 248, 248);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-size: 0; */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    
+}
+
+main,
+footer {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+    position: relative;
+}
+
+footer {
+    padding: 20px 0;
+    height: 5vh;
+    background: var(--main-color);
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#separator {
+    width: 3px;
+    height: 85vh;
+    background: var(--main-color);
+    cursor: ew-resize;
+}
+
+#separator:hover {
+    background: var(--main-color-hover);
+}
+
+.resize {
+    display: block;
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width: 768px) {
+    main {
+        height: 100%;
+        min-height: 85vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    
+}
+
+main,
+footer {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 85vh;
+}
+
+footer {
+    padding: 20px 0;
+    height: 5vh;
+    background: var(--main-color);
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#separator {
+    width: 3px;
+    height: 85vh;
+    background: var(--main-color);
+    cursor: ew-resize;
+}
+
+#separator:hover {
+    background: var(--main-color-hover);
+}
+
+@media(max-width: 768px) {
+    main {
+        height: 100%;
+        min-height: 85vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+} */
